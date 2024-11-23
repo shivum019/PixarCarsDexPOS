@@ -73,8 +73,8 @@ The data may never be made available to the public, and its access must be secur
 
 ## Your rights
 
-You may request a copy or the delection of your personal data held by the application by contacting the application owners. The recommended way is sending an email to "ballsdex (at) laggron (dot) red". You may find other means of contact [here](https://gist.github.com/laggron42/52ae099c55c6ee1320a260b0a3ecac4e#contact).
+You may request a copy or the delection of your personal data held by the application by contacting the application owners. The recommended way is sending an email to "contact (at) ballsdex (dot) com". You may find other means of contact [here](https://gist.github.com/laggron42/52ae099c55c6ee1320a260b0a3ecac4e#contact).
 
 ----
 
-Last updated 9th October 2022
+Last updated 23rd November 2024
