@@ -8,7 +8,7 @@ The following document explains what data is collected by BallsDex.
 - "Data" refers to data stored by an individual instance, including personal data
 - "Bot" or "instance" refers to the copy of the code running the Discord application, with its own data
 - "Collectible" refers to any object that is meant to be collected, such as countryballs or other future means like virtual currency
-- "Application owners" refers to the owners of the Discord application, meaning the one with any form of access to the application's authentication method and data belonging to the instance
+- "Application owners" refers to the owners of the Discord application, meaning the one with any form of access to the application's authentication method and data belonging to the instance. This is usually referred to as the "Ballsdex core team" or "Ballsdex team".
 - "BallsDex moderation team" or "moderation team" refers to the owners of the Discord application and the users they may chose to be part of the moderation team. You may find a list of these users on the [Discord server](https://discord.gg/HmSMT4WKKV).
 
 ## Open source
@@ -38,8 +38,6 @@ The code of BallsDex is open source under the MIT licence and available at https
 
 </details>
 
-**The instance is guaranteed to be running an exact copy of the code made open source.** The version may not be the latest available (check `/about`), but no local changes will be made. This may change, but users should be notified in the [Discord server](https://discord.gg/HmSMT4WKKV) about such change.
-
 You may check the source code and see how the data is managed, in addition to the following policy.
 
 ## What data is collected
@@ -54,10 +52,13 @@ In addition, the following data proper to BallsDex is created and used:
 
 - The list of collectibles owned by a user of the service
 - A history of trades done on collectibles, including the users that once owned the said collectible but do not anymore
+- Various settings configured by an individual user or the server, such as player policies or spawn silent option
+
+The bot has access to the content of messages but is used solely for the purpose of anti-cheat and the said content is not stored longer than necessary for the analysis (under one second). Message content is never cached or stored, and cannot be accessed by the administrators to read your messages.
 
 ## How the data is stored
 
-All data is stored on a PostgreSQL server, running on a Virtual Private Machine hosted by Oracle Corportation.
+All persistent data is stored on a PostgreSQL server, running on a server hosted by Hetzner.
 
 Interaction between the bot and the database server is exclusively local using [Tortoise ORM](https://github.com/tortoise/tortoise-orm).
 
@@ -65,7 +66,7 @@ Interaction between the bot and the database server is exclusively local using [
 
 The only persons allowed to access the data are the application owners.
 
-Any application owner may interact with the bot and the administrator interface. Only `El Laggron#0260` has direct access on the host machine.
+Any application owner may interact with the bot and the administrator interface.
 
 The BallsDex moderation teams do not have access to the data.
 
