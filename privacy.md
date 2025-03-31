@@ -76,6 +76,18 @@ The data may never be made available to the public, and its access must be secur
 
 You may request a copy or the deletion of your personal data held by the application by contacting the application owners. The recommended way is sending an email to "contact (at) ballsdex (dot) com". You may find other means of contact [here](https://gist.github.com/laggron42/52ae099c55c6ee1320a260b0a3ecac4e#contact).
 
+# Extra clause: until April 2nd, midnight UTC
+
+For a limited-time event, Ballsdex may read the voice messages in the following conditions
+- The user accepted the extra clause via `/player consent`
+- The message is replying to the bot with a spawned collectible
+- The user is not blacklisted
+- The message is less than 5 seconds long
+If all the conditions above are true, the message will be uploaded to Google API for text recognition. The data is not saved by Ballsdex or Google afterwards.
+
+You may read more about Google's usage of the data. BALLSDEX DID NOT OPT INTO LOGGING.\
+https://cloud.google.com/speech-to-text/docs/data-usage-faq
+
 ----
 
 Last updated 23rd November 2024
